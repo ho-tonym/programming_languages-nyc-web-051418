@@ -37,8 +37,8 @@ def reformat_languages(languages)
  # your code here
   new_hash = Hash.new
   
-  languages.each do |paradigm, p_languages|
-    p_language.each do |language, type_hash|
+  languages.each do |paradigm, paradigm_languages|
+    paradigm_languages.each do |language, type_hash|
       if !new_hash.keys.include?(language)
         styles = Array.new
         styles.push(paradigm)
