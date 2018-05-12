@@ -44,7 +44,7 @@ def reformat_languages(languages)
         styles.push(paradigm)
         new_hash[language] = { :type => type_hash[:type], :style => styles }
       else
-        new_hash[language][:style] << paradigm
+        new_hash[language][:style].push(paradigm)
       end
     end
   end
